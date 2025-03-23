@@ -49,7 +49,7 @@ elif sidebar_option == "Chat with Bot":
 
     # If the user asks something, show a response
     if user_input:
-        st.session_state.questions.append(question)
+        st.session_state.questions.append(user_input)
         # Uncomment below to integrate OpenAI GPT for dynamic responses
         bot_response = get_bot_response(user_input)
 
