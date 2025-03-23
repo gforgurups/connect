@@ -4,7 +4,7 @@ from datetime import timedelta
 import os
 from dotenv import load_dotenv
 load_dotenv()
-groq_api_key = os.getenv("GROQ_API_KEY")
+groq_api_key = st.secrets["GROQ_API_KEY"] #os.getenv("GROQ_API_KEY")
 from langchain_groq import ChatGroq
 
 if 'questions' not in st.session_state:
